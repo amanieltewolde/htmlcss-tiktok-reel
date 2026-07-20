@@ -81,7 +81,51 @@ footer {
 
 	/* Inserisci qui sotto 
 	le tue regole, se necessario. */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 14px;
+	color: #fff;
+	font-size: 11px;
+
+& div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+& .sideicon {
+	font-size: 28px;
+
+& .logo{
+	position: relative;
+}	
 }
+}
+}
+
+.logoboo {
+	border-radius: 50%;
+    border: 2px solid #fff;
+	height: 40px;
+}
+
+/* parte bottone '+' da rifinire */
+.add{
+	justify-content: center;
+    align-items: center;
+	display: flex;
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+    color: #fff;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+	bottom: 0;
+	left: 50%;
+	translate: -50% 50%;
+}	
 
 /* ---------------------
 Regole per evidenziare i blocchi 
