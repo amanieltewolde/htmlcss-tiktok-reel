@@ -141,12 +141,11 @@ footer .foot-add{
 .bi-chat-square::after{
 	content: '19';
     background-color: red;
-    border-radius: 31%;
+    border-radius: 42%;
     position: absolute;
     font-size: 9px;
     height: 12px;
-    display: inline-block;
-    max-width: 100%;
+    width: 10px;
     font-style: normal;
     padding: 0 3px;
     translate: -50% 0;
