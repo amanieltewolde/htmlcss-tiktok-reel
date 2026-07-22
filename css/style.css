@@ -45,16 +45,39 @@ video {
 		font-size: 15px;
 		display: flex;
 		gap: 9px;
+		position: relative;
 
-	& a {
-		color: inherit;
-		text-decoration: none;
+		
+		& a {
+			color: inherit;
+			text-decoration: none;
+		}	
+		
 	}	
+}	
 
-	}	
-			}	
-	
+.follow::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 30%;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background-color: red;
+	translate: 50% -50%;
+}
 
+.for-u::after{
+	content: '_';
+	position: absolute;
+	color: #fff;
+	font-weight: 700;
+	font-size:large;
+	bottom: 0;
+	right: 15%;
+	translate: 0 50%;
+} 
 
 
 
@@ -148,8 +171,8 @@ footer .foot-add{
     color: #fff;
     background-color: red;
     border-radius: 50%;
-    /* position: absolute;
-	bottom: 0;
+    position: absolute;
+	/* bottom: 0;
 	left: 50%;
 	translate: -50% 50%; */
 }	
