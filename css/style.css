@@ -42,9 +42,9 @@ video {
 	color: #fff;
 
 	& nav {
-		font-size: 15px;
+		font-size: 14px;
 		display: flex;
-		gap: 9px;
+		gap: 14px;
 		position: relative;
 
 		
@@ -56,27 +56,40 @@ video {
 	}	
 }	
 
+
 .follow::before{
 	content: '';
 	position: absolute;
 	top: 0;
 	right: 30%;
-	width: 7px;
-	height: 7px;
+	width: 6px;
+	height: 6px;
 	border-radius: 50%;
 	background-color: red;
 	translate: 50% -50%;
+}
+.follow::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	top: -10px;
+	right: 27%;
+	background-color: rgba(2, 35, 99, 0.7);
+}
+
+.for-u{
+	font-weight: bold;
 }
 
 .for-u::after{
 	content: '_';
 	position: absolute;
 	color: #fff;
-	font-weight: 700;
-	font-size:large;
-	bottom: 0;
-	right: 15%;
-	translate: 0 50%;
+	font-weight: bold;
+	font-size:24px;
+	bottom: -9px;
+	right: 10%;
 } 
 
 
@@ -100,7 +113,7 @@ footer {
 	padding: 15px 24px;	
 
 }
-
+/* button centrale nel footer */
 footer .foot-add{
 	height: 28px;
 	width: 40px;
@@ -108,6 +121,8 @@ footer .foot-add{
 	font-size: 20px;
 	border-left: 3px solid aqua;
     border-right: 3px solid fuchsia;
+	border-top: none;
+    border-bottom: none;
 }
 
 .foot-icon {
@@ -120,6 +135,21 @@ footer .foot-add{
 
 .foot-icon i{
 	font-size: 21px;
+}
+
+/* notifica posta in arrivo */
+.bi-chat-square::after{
+	content: '19';
+    background-color: red;
+    border-radius: 31%;
+    position: absolute;
+    font-size: 9px;
+    height: 12px;
+    display: inline-block;
+    max-width: 100%;
+    font-style: normal;
+    padding: 0 3px;
+    translate: -50% 0;
 }
 
 /* Sidebar */
@@ -162,26 +192,24 @@ footer .foot-add{
 
 /* parte bottone '+' da rifinire */
 .add{
-	justify-content: center;
-    align-items: center;
-	display: flex;
+	vertical-align: middle;
     height: 20px;
     width: 20px;
-    font-size: 20px;
+    font-size: 17px;
     color: #fff;
     background-color: red;
     border-radius: 50%;
     position: absolute;
-	/* bottom: 0;
-	left: 50%;
-	translate: -50% 50%; */
+	/* bottom: 0; */
+	/* left:50%; */
+	/* translate: -50% 50%; */
 }	
 
 /* ---------------------
 Regole per evidenziare i blocchi 
 da rimuovere una volta concluso
 --------------------- */
-.debug footer {
+/* .debug footer {
 	min-height: 100px;
 	border: 2px dashed #fff;
 }
@@ -195,6 +223,6 @@ da rimuovere una volta concluso
 .debug .reel-header {
 	min-height: 50px;
 	border: 2px dashed #be1717;
-}
+} */
 
 /* --------------------- */
