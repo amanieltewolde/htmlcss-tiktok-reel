@@ -83,13 +83,13 @@ video {
 }
 
 .for-u::after{
-	content: '_';
-	position: absolute;
-	color: #fff;
-	font-weight: bold;
-	font-size:24px;
-	bottom: -9px;
-	right: 10%;
+	content: '';
+    position: absolute;
+    background-color: #fff;
+    height: 2px;
+    width: 19px;
+    bottom: -5px;
+    right: 7%;
 } 
 
 
@@ -168,19 +168,15 @@ footer .foot-add{
 	font-size: 11px;
 
 	& div{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
 	& .sideicon {
 		font-size: 28px;
-		
-		& .logo{
-			position: relative;
-		}	
 	}
-}
 }
 
 .logoboo {
@@ -189,19 +185,18 @@ footer .foot-add{
 	height: 40px;
 }
 
-/* parte bottone '+' da rifinire */
+/* parte bottone '+' */
 .add{
 	vertical-align: middle;
-    height: 20px;
-    width: 20px;
+    height: 18px;
+    width: 18px;
     font-size: 17px;
     color: #fff;
     background-color: red;
     border-radius: 50%;
-    position: absolute;
-	/* bottom: 0; */
-	/* left:50%; */
-	/* translate: -50% 50%; */
+    position: relative;
+    bottom: 10px;
+    border: none;
 }	
 
 /* ---------------------
